@@ -1,24 +1,47 @@
-# README
+# Rails Blog.com
+> This is a full stack application built with Ruby on Rails that allows users to like and comment on blog posts and also displays the likes and comments.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Built With
+- Major languages: `Ruby`
+- Frameworks: `Rail`
+- Libraries used: `gem`, `npm`
 
-Things you may want to cover:
+## Live Demo (if available)
+[My Blog App](https://github.com/Nizamuddin4493/my_blog_dot_com)
 
-* Ruby version
+## Getting Started
+> To get a local copy up and running follow these simple example steps.
 
-* System dependencies
+### Prerequisites
+> A code editor (preferably Visual Studio Code)
 
-* Configuration
+### Install
+> Ruby >= 3.1.2p20
 
-* Database creation
+### Usage
+> Clone the project using the following command:
 
-* Database initialization
+`git@github.com:Nizamuddin4493/rails_blog.git`
 
-* How to run the test suite
+## Author
+👤 Nizamuddin Ahmadzai
 
-* Services (job queues, cache servers, search engines, etc.)
+- GitHub: [@Nizamuddin4493](https://github.com/Nizamuddin4493)
+- Twitter: [@Nizamuddin4493](https://twitter.com/Nizamuddin4493)
+- LinkedIn: [nizamuddin4493](https://linkedin.com/in/nzm44)
 
-* Deployment instructions
 
-* ...
+## Contributing
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Nizamuddin4493/my_blog_dot_com/issues).
+
+## Show your support
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+Hat tip to anyone whose code was used
+Inspiration
+etc
+## 📝 License
+This project is MIT licensed.
