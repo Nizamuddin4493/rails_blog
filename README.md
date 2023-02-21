@@ -26,9 +26,6 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-
-
-
 # 📖 Rails Blog
 
 > **Rails Blog** is a full stack application built with Ruby on Rails that allows users to like and comment on blog posts and also displays the likes and comments.
@@ -185,7 +182,5 @@ Hat tip to anyone whose code was used Inspiration etc
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
