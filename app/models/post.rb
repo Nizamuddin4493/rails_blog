@@ -3,11 +3,15 @@ class Post < ApplicationRecord
   has_many :comments, foreign_key: 'post_id'
   has_many :likes
 
+  validates :post, length: {maximum: 250}
+  validates :commentsCounter, numericality: { greater_than_or_equal_to: 0, only_integer: true }
+  validates :likesCounter, numericality: { greater_than_or_equal_to: 0, only_integer: true }
+
   def upadate_countr
-    if user.posts_countr
-      user.posts_counter += 1
+    if user.postsCountr
+      user.postsCounter += 1
     else
-      user.posts_counter = 1
+      user.postsCounter = 1
     end
     user.save
   end

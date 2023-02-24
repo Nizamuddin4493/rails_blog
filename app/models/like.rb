@@ -3,10 +3,10 @@ class Like < ApplicationRecord
   belongs_to :post
 
   def update_counter
-    if post.likes_counter
-      post.likes_counter += 1
+    if post.likesCounter
+      post.likesCounter += 1
     else
-      post.likes_counter = 1
+      post.likesCounter = 1
     end
     post.save
     post.save
