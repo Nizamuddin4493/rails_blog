@@ -1,16 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
-  # it 'testing Posts' do
-  # expect(Post.new).to be_valid
-  # end
+
   before do
     @user = User.create(name: 'Halle', photo: 'Photo', bio: 'Ruby Developper', postsCounter: 0)
     @post = Post.create(title: 'Hello', text: 'Hello Rails', user: @user, commentsCounter: 0, likesCounter: 0)
     @comments = []
   end
 
-  it 'Should be present title to Hello' do
+  it 'Should be present and <= 250 characters' do
     @post.title = 'Hello'
     expect(@post).to be_valid
   end

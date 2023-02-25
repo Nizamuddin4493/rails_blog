@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  # pending "add some examples to (or delete) #{__FILE__}"
+
   before do
     @user = User.create(name: 'Halle', photo: 'Photo', bio: 'Ruby Developper', postsCounter: 0)
     @posts = []
@@ -20,5 +20,15 @@ RSpec.describe User, type: :model do
   it 'Return the last 3 posts' do
     result = @user.last_3_posts
     expect(result).to eq(@posts)
+  end
+
+  it 'The user name must not be blank' do
+    @user.name = ' '
+    expect(@user).to be_invalid
+  end
+
+  it 'The Post Counter must not be blank' do
+    @user.postsCounter = ' '
+    expect(@user).to be_invalid
   end
 end
