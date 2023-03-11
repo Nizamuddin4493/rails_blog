@@ -1,0 +1,19 @@
+<h1>Salam Nizam</h1>
+<div class="users_show_view">
+  <%= render 'shared/user', user: @user %>
+  <article class="user-content">
+    <h3>Bio</h3>
+    <span><%= @user.bio %><span>
+  </article>
+  <% @user.last_3_posts.each do |post| %>
+    <div class="post-content">
+        <h2 class="post-title"> Post : <%= post.title%></h2>
+        <p class="post-text"><%= post.text%></p>
+        <div class="post-count">
+          <span>Comments: <%= post.commentsCounter%><span>
+          <span>Likes: <%= post.likesCounter%><span>
+        </div>
+    </div>
+  <% end %>
+  <button><%= link_to "See all posts", user_posts_path(@user.id) %></button>
+</div>
