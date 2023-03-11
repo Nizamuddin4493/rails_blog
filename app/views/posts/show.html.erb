@@ -1,1 +1,24 @@
-<h1> show posts of the user </h1>
+<div class="show_post_view">
+    <div class="post-container">
+        <div class="post-details-post">
+            <h2>Post <%= @post.title %> by <%= @post.user.name %></h2>
+            <div class="post-count">
+                <span>Comments: <%= @post.commentsCounter%><span>
+                <span>Likes: <%= @post.likesCounter%><span>
+            </div>
+        </div>
+        <div class="post-content">
+            <p><%= @post.text %></p>
+            <div class="post-date">Date: <%= @post.created_at %></div>
+        </div>
+    </div>
+    <div class="post-comments">
+        <% if @post.comments.size != 0 %>
+            <ul class="comment-container">
+                <% @post.comments.each do |comment| %>
+                    <li><%= comment.user.name %>: <%= comment.text %></li>
+                <% end %>
+            </ul>
+        <% end %>
+    </div>
+</div>
