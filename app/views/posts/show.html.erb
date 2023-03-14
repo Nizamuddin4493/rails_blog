@@ -1,7 +1,9 @@
 <div class="show_post_view">
     <div class="post-container">
         <div class="post-details-post">
-            <h2>Post <%= @post.title %> by <%= @post.user.name %></h2>
+        <h1>show posts of the user</h1>
+            <h2>Post <%= @post.title %></h2>
+            <span><%= @post.user.name %></span>
              <div class="post-count">
                 <span>Comments: <%= @post.commentsCounter%><span>
                 <span>Likes: <%= @post.likesCounter%><span>

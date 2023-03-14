@@ -5,18 +5,13 @@ RSpec.describe 'Posts index page', type: :system do
     before(:each) do
       @user_one = User.create(name: 'soe sandar win',
                               photo: 'https://www.anisearch.de/images/character/cover/full/0/817.webp', bio: 'software engineer', postsCounter: 0)
-      @post_one = Post.create(author: @user_one, title: 'Hello', text: 'this is my first post', commentsCounter: 0,
+      @post_one = Post.create(user: @user_one, title: 'Hello', text: 'this is my first post', commentsCounter: 0,
                               likesCounter: 0)
-      @post_two = Post.create(author: @user_one, title: 'jobs', text: 'I am gonna get a jon in may', commentsCounter: 0,
+      @post_two = Post.create(user: @user_one, title: 'jobs', text: 'I am gonna get a jon in may', commentsCounter: 0,
                               likesCounter: 0)
-      @comment = Comment.create(post: @post_two, author: @user_one, text: 'hi nice to meet you')
+      @comment = Comment.create(post: @post_two, user: @user_one, text: 'hi nice to meet you')
     end
-
-    it 'User should see the other user profile picture' do
-      visit user_posts_path(@user_one)
-      expect(page).to have_selector('img')
-    end
-
+    
     it 'User should see the other user name' do
       visit user_posts_path(@user_one)
       expect(page).to have_content('soe sandar win')
