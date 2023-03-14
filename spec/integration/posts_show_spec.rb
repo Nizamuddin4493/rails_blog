@@ -6,7 +6,7 @@ RSpec.describe 'Posts', type: :system do
       @user = User.create(name: 'peter',
                           photo: 'https://www.befunky.com/images/prismic/5ddfea42-7377-4bef-9ac4-f3bd407d52ab_landing-photo-to-cartoon-img5.jpeg?auto=avif,webp&format=jpg&width=863',
                           bio: 'software engineer', postsCounter: 2)
-                          @post = Post.create(user: @user, title: 'Hello', text: 'this is my first post', commentsCounter: 2,
+      @post = Post.create(user: @user, title: 'Hello', text: 'this is my first post', commentsCounter: 2,
                           likesCounter: 0)
       @cpmment_one = Comment.create(user: @user, post: @post, text: 'Nice work peter')
       @cpmment_two = Comment.create(user: @user, post: @post, text: 'great article')

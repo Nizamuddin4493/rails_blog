@@ -1,10 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe 'Test for the user show page', type: :system do
-  context ' Check the right content for user show page' do
+  describe ' Check the right content for user show page' do
     before(:each) do
       @new_user = User.create(name: 'soe sandar win',
-                              photo: 'https://www.anisearch.de/images/character/cover/full/0/817.webp', bio: 'software engineer', postsCounter: 0)
+                              photo: 'https://www.anisearch.de/images/character/cover/full/0/817.webp',
+                              bio: 'software engineer', postsCounter: 0)
       @post_one = Post.create(user: @new_user, title: 'Hello', text: 'this is my first post', commentsCounter: 0,
                               likesCounter: 0)
       @post_two = Post.create(user: @new_user, title: 'jobs', text: 'I am gonna get a jon in may', commentsCounter: 0,
