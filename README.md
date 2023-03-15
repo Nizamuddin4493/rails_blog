@@ -191,6 +191,6 @@ Hat tip to anyone whose code was used Inspiration etc
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/anyepeter/Blog-app/blob/develop/LICENSE) licensed.
+This project is [MIT](https://github.com/nizamuddin4493/rails_blog/blob/develop/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

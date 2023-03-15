@@ -25,7 +25,7 @@ development:
   <<: *default
   database: rails_blog
   username: postgres
-  password: Fe@rLes$237
+  password: postgresql1
   host: localhost
   port: 5432
 
@@ -63,7 +63,7 @@ test:
   <<: *default
   database: rails_blog
   username: postgres
-  password: Fe@rLes$237
+  password: postgresql1
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -89,4 +89,4 @@ production:
   <<: *default
   database: rails_blog_production
   username: postgres
-  password: Fe@rLes$237
+  password: postgresql1
