@@ -67,7 +67,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://github.com/Nizamuddin4493/rails_blog)
+- [Live Demo Link](coming soon...)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -159,7 +159,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Nizamuddin4493/rails_blog/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -191,6 +191,6 @@ Hat tip to anyone whose code was used Inspiration etc
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/nizamuddin4493/rails_blog/blob/develop/LICENSE) licensed.
+This project is [MIT](https://github.com/Nizamuddin4493/rails_blog/blob/dev/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
