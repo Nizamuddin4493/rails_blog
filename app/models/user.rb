@@ -9,7 +9,7 @@ class User < ApplicationRecord
   validates :name, presence: true
   validates :postsCounter,
             numericality: { only_interger: true, greater_than_or_equal_to: 0,
-                            message: 'Must be integer and greater than or Equal to Zero.' }
+                            message: 'Must be integer and greater than or Equal to Zero.' }, allow_nil: true
 
   def last_3_posts
     posts.last(3)
