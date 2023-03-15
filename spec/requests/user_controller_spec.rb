@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe UserController, type: :request do
+RSpec.describe UsersController, type: :request do
   describe 'GET index' do
     before(:example) do
-      get '/user'
+      get '/users'
     end
 
     it "renders 'index' template" do
@@ -20,12 +20,12 @@ RSpec.describe UserController, type: :request do
   end
 end
 
-RSpec.describe UserController, type: :request do
+RSpec.describe UsersController, type: :request do
   describe 'GET show' do
     before(:example) do
       user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.',
                          postsCounter: 0)
-      get "/user/#{user.id}"
+      get "/users/#{user.id}"
     end
 
     it "renders 'show' template" do

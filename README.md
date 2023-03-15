@@ -129,11 +129,21 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 Nizamuddin Ahmadzai
+👤 **Nizamuddin Ahmadzai**
 
 - GitHub: [@Nizamuddin4493](https://github.com/Nizamuddin4493)
 - Twitter: [@Nizamuddin4493](https://twitter.com/Nizamuddin4493)
 - LinkedIn: [nizamuddin4493](https://linkedin.com/in/nzm44)
+
+👤 **Soe Sandar Win**
+
+- GitHub: [@soesandarwin2201](https://github.com/soesandarwin2201)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/soe-sandar-win-softwareengineer/)
+
+👤 **Peter**
+- GitHub: [@anyepter](https://github.com/githubhandle)
+- Twitter: [@anyepeter](https://twitter.com/twitterhandle)
+- LinkedIn: [peterchendi](https://linkedin.com/in/linkedinhandle)
 
 <!-- FUTURE FEATURES -->
 
@@ -181,6 +191,6 @@ Hat tip to anyone whose code was used Inspiration etc
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/anyepeter/Blog-app/blob/develop/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -1,10 +1,10 @@
 <div class="posts_index_view">
-
+<h1>All posts of the user</h1>
 <div class="link-new-post">
   <%= link_to "New Post", new_user_post_path, class: "btn" %>
 </div>
   
-  <% @posts.each do |post| %>
+  <% @posts.includes(:comments, :likes).each do |post| %>
     <%= link_to "./posts/#{post.id}" do %>
     <div class="post-content">
       <h3> Post : <%= post.title%></h3>

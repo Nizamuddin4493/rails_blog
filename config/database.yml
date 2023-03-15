@@ -61,7 +61,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: rails_blog_test
+  database: rails_blog
   username: postgres
   password: postgresql1
 
@@ -88,5 +88,5 @@ test:
 production:
   <<: *default
   database: rails_blog_production
-  username: rails_blog
-  password: <%= ENV["RAILS_BLOG_DATABASE_PASSWORD"] %>
+  username: postgres
+  password: postgresql1
